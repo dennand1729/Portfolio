@@ -8,7 +8,7 @@ This project includes multiple calculator-based applications that automate key o
 ### Parallel Impedance Solver
 Computes equivalent impedance for arbitrary components in parallel, supporting complex values.
 ### Wye–Delta Conversion Tool
-Quickly converts between Wye (Y) and Delta (Δ) configurations, eliminating tedious algebra. Before inputting any values, displays a orientation diagram to help the user map the current circuit to the transformation (shown below)   
+Quickly converts between Wye (Y) and Delta (Δ) configurations, eliminating tedious algebra. Before inputting any values, displays a orientation diagram to help the user map the current circuit to the transformation (shown below):   
 
 ![Delta-Wye Conversion Graphic](DeltaWye.png)  
 
