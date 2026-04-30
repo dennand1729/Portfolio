@@ -1,0 +1,106 @@
+ClrHome
+
+Output(3,1,"W[|e]l[|c]om[|e] [t]o Ph[|a][s]o[r] O[p][|e][r][|a][t]io[n][s]")
+Output(6,1,"By A[n][|d][r][|e] D[|e][n][n]i[s]")
+Output(8,1,"P[r][|e][s][s] [|e][n][t][|e][r]")
+Output(10,1,"TURN ON DEGREE MODE")
+Pause 
+
+ClrHome
+0->dim(L6)
+12->dim(L6)
+
+
+For(I,1,2)
+	If I=1
+	Then
+		0->J
+	End
+	If I=2
+	Then
+		4->J
+	End
+	
+	
+	Disp ("P[r][|e][s][s] 1 fo[r] [r][|e][|c][t][|a][n]g|ul[|a][r] fo[r]m")
+	Input ("P[r][|e][s][s] 2 fo[r] [p]ol[|a][r] fo[r]m",K)
+	
+	
+	If K<1 or K>2
+	Then
+		ClrHome
+		Output(3,1,"I[n]|v[|a]li[|d] i[n][p]|u[t]")
+		Stop
+	End
+	
+	If K=1
+	Then
+		Input ("E[n][t][|e][r] [t]h[|e] [r][|e][|c][t][|a][n]g|ul[|a][r] fo[r]m of [t]h[|e] [p]h[|a][s]o[r]",L)
+		real(L)->L6(1+J)
+		imag(L)->L6(2+J)
+		abs(L)->L6(3+J)
+		angle(L)->L6(4+J)
+	End
+	
+	If K=2
+	Then
+		Input ("E[n][t][|e][r] [t]h[|e] m[|a]g[n]i[t]|u[|d][|e] of [t]h[|e] [p]h[|a][s]o[r]",L)
+		L->L6(3+J)
+		Input ("E[n][t][|e][r] [t]h[|e] [p]h[|a][s][|e] [|a][n]gl[|e]",L)
+		L->L6(4+J)
+		
+		L6(3+J)*cos(L6(4+J))->L6(1+J)
+		L6(3+J)*sin(L6(4+J))->L6(2+J)
+	End
+End
+
+ClrHome
+Disp ("S[|e]l[|e][|c][t] [|a][n] o[p][|e][r][|a][t]io[n]")
+Disp ("1 -- +")
+Disp ("2 -- -")
+Disp ("3 -- *")
+Disp ("4 -- /")
+
+Input ("E[n][t][|e][r] o[p][|e][r][|a][t]io[n] [p]l[|e][|a][s][|e]",H)
+
+If H=1
+Then
+	L6(1)+L6(5)->L6(9)
+	L6(2)+L6(6)L6->L6(10)
+	abs(L6(9)+L6(10)i)->L6(11)
+	angle(L6(9)+L6(10)i)->L6(12)
+End
+
+If H=2
+Then 
+	L6(1)-L6(5)->L6(9)
+	L6(2)-L6(6)L6->L6(10)
+	abs(L6(9)+L6(10)i)->L6(11)
+	angle(L6(9)+L6(10)i)->L6(12)
+End
+
+If H=3
+Then
+	(L6(3)*L6(7))->L6(11)
+	(L6(4)+L6(8))->L6(12)
+	(L6(11)*cos(L6(12)))->L6(9)
+	(L6(11)*sin(L6(12)))->L6(10)
+End
+
+If H=4
+Then
+	(L6(3)/L6(7))->L6(11)
+	(L6(4)-L6(8))->L6(12)
+	(L6(11)*cos(L6(12)))->L6(9)
+	(L6(11)*sin(L6(12)))->L6(10)
+	
+End 
+
+ClrHome
+Output(3,1, "R[|e][s]|ul[t]: ")
+Output(5,1, L6(9)+L6(10)i)
+
+Output(7,5,"R: ")
+Output(7,9, L6(11))
+Output(9,5,"theta: ")
+Output(9,9, L6(12))
