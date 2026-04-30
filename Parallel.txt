@@ -1,0 +1,40 @@
+Output(3,1,"Welcome to Eq Imped Program")
+Output(6,1, "By Andre Dennis")
+Output(8,1,"Press Enter")
+
+Pause
+ClrHome
+
+Input("How many impedances?", K)
+
+If K<5 or K=5
+Then
+	K-> dim(L5)
+End
+
+If K>5
+Then
+	Stop
+End
+
+For(I,1,K)
+	Input("Put in a number, L)
+	L->L5(I)
+End
+
+ClrHome
+Output(1,1,L5)
+Pause
+
+0->G
+
+For(I,1,K)
+	(1/L5(I))+G)->G
+End
+
+ClrHome
+
+Output(1,1, "EQ IMPEDANCE IS : ")
+Output(2,1,G^-1)
+
+Pause
