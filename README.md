@@ -8,9 +8,25 @@ This project includes multiple calculator-based applications that automate key o
 ### Parallel Impedance Solver
 Computes equivalent impedance for arbitrary components in parallel, supporting complex values.
 ### Wye–Delta Conversion Tool
-Quickly converts between Wye (Y) and Delta (Δ) configurations, eliminating tedious algebra. Before inputting any values, displays a orientation diagram to help the user map the current circuit to the transformation (shown below):   
+Quickly converts between Wye (Y) and Delta (Δ) configurations, eliminating tedious algebra. Before inputting any values, the application displays an orientation diagram to help the user map the current circuit to the transformation. Below are steps to use the application
 
-![Delta-Wye Conversion Graphic](DeltaWye.png)  
+1.) Click on PRGRM on your TI-84.  
+
+2.) You should see the Home Screen.  
+
+![Delta-Wye Conversion Graphic1](DWIntro.jpg) 
+
+3.) The application will notify you of an incoming diagram to help you orient and convert your values to be used in the program:    
+
+![Delta-Wye Conversion Graphic2](DWPrompt.jpg)   
+
+4.) The application will display the aformentioned diagram :    
+![Delta-Wye Conversion Graphic3](DWDiagram.jpg)   
+
+5.) Input your values.
+
+6.)Redraw your converted circuit with the new values.
+
 
 ### Phasor Calculation Engine 
 Performs arithmetic on phasors in both:
