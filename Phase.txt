@@ -1,8 +1,8 @@
 ClrHome
 
-Output(3,1,"W[|e]l[|c]om[|e] [t]o Ph[|a][s]o[r] O[p][|e][r][|a][t]io[n][s]")
-Output(6,1,"By A[n][|d][r][|e] D[|e][n][n]i[s]")
-Output(8,1,"P[r][|e][s][s] [|e][n][t][|e][r]")
+Output(3,1,"Welcome to Phasor Operations]")
+Output(6,1,"By Andre Dennis")
+Output(8,1,"Press Enter")
 Output(10,1,"TURN ON DEGREE MODE")
 Pause 
 
@@ -22,20 +22,20 @@ For(I,1,2)
 	End
 	
 	
-	Disp ("P[r][|e][s][s] 1 fo[r] [r][|e][|c][t][|a][n]g|ul[|a][r] fo[r]m")
-	Input ("P[r][|e][s][s] 2 fo[r] [p]ol[|a][r] fo[r]m",K)
+	Disp ("Press 1 for rectaangular form")
+	Input ("Press 2 for polar form",K)
 	
 	
 	If K<1 or K>2
 	Then
 		ClrHome
-		Output(3,1,"I[n]|v[|a]li[|d] i[n][p]|u[t]")
+		Output(3,1,"Invalid Input")
 		Stop
 	End
 	
 	If K=1
 	Then
-		Input ("E[n][t][|e][r] [t]h[|e] [r][|e][|c][t][|a][n]g|ul[|a][r] fo[r]m of [t]h[|e] [p]h[|a][s]o[r]",L)
+		Input ("Enter the rectangular form of the phasor",L)
 		real(L)->L6(1+J)
 		imag(L)->L6(2+J)
 		abs(L)->L6(3+J)
@@ -44,9 +44,9 @@ For(I,1,2)
 	
 	If K=2
 	Then
-		Input ("E[n][t][|e][r] [t]h[|e] m[|a]g[n]i[t]|u[|d][|e] of [t]h[|e] [p]h[|a][s]o[r]",L)
+		Input ("Enter the magnitude of the phasor",L)
 		L->L6(3+J)
-		Input ("E[n][t][|e][r] [t]h[|e] [p]h[|a][s][|e] [|a][n]gl[|e]",L)
+		Input ("Enter the phase angle",L)
 		L->L6(4+J)
 		
 		L6(3+J)*cos(L6(4+J))->L6(1+J)
@@ -55,13 +55,13 @@ For(I,1,2)
 End
 
 ClrHome
-Disp ("S[|e]l[|e][|c][t] [|a][n] o[p][|e][r][|a][t]io[n]")
+Disp ("Select an operation")
 Disp ("1 -- +")
 Disp ("2 -- -")
 Disp ("3 -- *")
 Disp ("4 -- /")
 
-Input ("E[n][t][|e][r] o[p][|e][r][|a][t]io[n] [p]l[|e][|a][s][|e]",H)
+Input ("Enter operation please",H)
 
 If H=1
 Then
@@ -97,7 +97,7 @@ Then
 End 
 
 ClrHome
-Output(3,1, "R[|e][s]|ul[t]: ")
+Output(3,1, "Result: ")
 Output(5,1, L6(9)+L6(10)i)
 
 Output(7,5,"R: ")
