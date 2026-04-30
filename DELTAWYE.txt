@@ -1,0 +1,97 @@
+ClrHome
+
+Disp("Welcome to Delta Wye")
+
+Disp("Conversion for Impedances)
+
+Disp("")
+Disp("")
+Disp("")
+
+Disp("Press 1 for Delta to Wye")
+Input("Press 2 for Wye to Delta", A)
+
+ClrHome
+
+Disp("Use diagram to input Data")
+Pause
+
+ClrHome
+Output(2,1,"A")
+Output(2,11,"C")
+Output(9,6,"B")
+Output(3,1,"----ZAC----")
+Output(4,1,"I         I")
+Output(5,1,"I         I")
+Output(6,1,"ZAB     ZBC")
+Output(7,1,"I         I")
+Output(8,1,"I         I")
+Output(9,1,"-----------")
+Output(10,1, "    B    ")
+
+Output(2,15,"A")
+Output(2,16,"--ZA--")
+Output(2,22,"-ZC-C")
+Output(3,21, "I")
+Output(4,21, "I")
+Output(5,21,"ZB")
+Output(6,21,"I")
+Output(7,21,"I")
+Output(8,21,"I")
+Output(10,21,"B")
+Pause
+
+0->dim(L5)
+6->dim(L5)
+
+If A = 1
+Then
+	ClrHome
+	Input("Enter ZAB", C)
+	Input("Enter ZAC", D)
+	Input("Enter ZBC", E)
+	C->L5(1)
+	D->L5(2)
+	E->L5(3)
+	ClrHome
+	(L5(1)+L5(2)+L5(3))-> B
+	((L5(1)*L5(2))/B)-> L5(4)
+	((L5(1)*L5(3))/B)-> L5(5)
+	((L5(2)*L5(3))/B)-> L5(6)
+
+	Output(1,1,"ZA: ")
+	Output(2,1, L5(4))
+	Output(4,1,"ZB: ")
+	Output(5,1, L5(5))
+	Output(7,1,"ZC: ")
+	Output(8,1, L5(6))
+
+	Pause
+End
+
+If A = 2
+Then
+	ClrHome
+	Input("Enter ZA",C)
+	Input("Enter ZB",D)
+	Input("Enter ZC", E)
+
+	C->L5(4)
+	D->L5(5)
+	E->L5(6)
+
+	ClrHome
+	((L5(4)*L5(5)) +(L5(4)*L5(6))+(L5(5)*L5(6)))->B
+	(B/(L5(6)))->L5(1)
+	(B/(L5(4)))->L5(3)
+	(B/(L5(5)))->L5(2)
+
+	Output(1,1, "ZAB : ")
+	Output(1,7,L5(1))
+	Output(3,1, "ZAC : ")
+	Output(3,7,L5(2))
+	Output(5,1, "ZBC : ")
+	Output(5,7,L5(3))
+
+	Pause
+End
