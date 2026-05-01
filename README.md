@@ -62,4 +62,29 @@ This application performs arithmetic on phasors in both:
 
 It is designed to simplify steady-state sinusoidal analysis, including addition, subtraction, multiplication, and division. 
 Below are the steps to use the application:  
-1.)
+1.) Click on PRGRM on your TI-84 device.  
+
+2.) Once entering PHASE you should see the home screen 
+
+![Phase Graphic 1](PhaseIntro.jpg)  
+
+3.) Press Enter to continue only after you have ensured your calculator's mode (displayed on top line of screen) is in degrees.  
+
+4.) You will be prompted to answer if you are inputting each phasor in rectangular or polar form. The program will then ask you to put in each phasor.  Press Enter after inputting each value.
+
+![Phase Graphic 2](PhaseInputs.jpg)  
+
+5.) Select an operation. The engine currently supports addition, subtraction, multiplication, and division.  
+
+6.) The program will output the result in both rectangular and polar form.  
+
+![Phase Graphic 1](Phase Results.jpg)  
+
+
+
+
+
+
+
+
+
