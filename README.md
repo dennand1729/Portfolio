@@ -1,3 +1,11 @@
+## Table of Contents
+
+- [Summary](#summary)
+- [Overview of Tools](#overview-of-tools)
+    - [Parallel Impedance Solver](#parralel-impedance-solver)
+    - [Wye-Delta Conversion Tool](#wye-delta-conversion-tool)
+    - [Phasor-Calculation Engine](#phasor-calculation-engine)
+
 # Summary
 
 A suite of custom-built applications for the TI-84 calculator designed to streamline common circuit analysis tasks. These tools reduce repetitive computation, minimize human error, and accelerate problem-solving in steady-state and network analysis.
