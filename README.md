@@ -2,7 +2,7 @@
 
 - [Summary](#summary)
 - [Overview of Tools](#overview-of-tools)
-    - [Parallel Impedance Solver](#parralel-impedance-solver)
+    - [Parallel Impedance Solver](#parallel-impedance-solver)
     - [Wye-Delta Conversion Tool](#wye-delta-conversion-tool)
     - [Phasor-Calculation Engine](#phasor-calculation-engine)
 
