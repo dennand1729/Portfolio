@@ -1,16 +1,17 @@
-## Table of Contents
-
-- [Summary](#summary)
-- [Overview of Tools](#overview-of-tools)
-    - [Parallel Impedance Solver](#parallel-impedance-solver)
-    - [Wye-Delta Conversion Tool](#wye-delta-conversion-tool)
-    - [Phasor-Calculation Engine](#phasor-calculation-engine)
-
 # Summary
 
 A suite of custom-built applications for the TI-84 calculator designed to streamline common circuit analysis tasks. These tools reduce repetitive computation, minimize human error, and accelerate problem-solving in steady-state and network analysis.
 
 To begin using these files on your calculator you can either download the .8xp files housed on this repository and use TI Connect software to flash the file onto your device. Alternatively, use the text files on the repository to inspire your own unique designs!
+
+
+## Table of Contents
+
+- [Overview of Tools](#overview-of-tools)
+    - [Parallel Impedance Solver](#parallel-impedance-solver)
+    - [Wye-Delta Conversion Tool](#wye-delta-conversion-tool)
+    - [Phasor-Calculation Engine](#phasor-calculation-engine)
+
 
 ## Overview of Tools
 This library houses multiple circuit-analysis applications designed to give young EE students a competitive edge and teach the power of script automation.
