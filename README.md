@@ -32,7 +32,7 @@ Here is a guide on how to use it:
 
 
 
-### Wye–Delta Conversion Tool
+### Wye Delta Conversion Tool
 Quickly converts between Wye (Y) and Delta (Δ) configurations, eliminating tedious algebra. Before inputting any values, the application displays an orientation diagram to help the user map the current circuit to the transformation. Below are steps to use the application
 
 1.) Click on PRGRM on your TI-84.  
