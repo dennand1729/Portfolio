@@ -78,7 +78,7 @@ Below are the steps to use the application:
 
 6.) The program will output the result in both rectangular and polar form.  
 
-![Phase Graphic 1](Phase Results.jpg)  
+![Phase Graphic 3](Phase Results.jpg)  
 
 
 
