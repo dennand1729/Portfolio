@@ -20,7 +20,17 @@ Computes equivalent impedance for  components in parallel networks.  This applic
 Here is a guide on how to use it:
 
 1.) Click PRGRM on your TI-84.  
-2.) You should see the application's Home Screen.
+2.) You should see the application's Home Screen.  
+![Equivalent Impedance Graphic 1](EqImpedIntro.jpg)  
+3.) The application will prompt you for how many impedances are in the parallel network you want to combine. You may enter up to 5. Now enter each value when prompted.
+![Equivalent Impedance Graphic 2](EqImpedDemo.jpg)  
+4.) The application will now display the array it stores the values in. Click enter.  
+5.) The application will now display the equivalent impedance in rectangular form.
+![Equivalent Impedance Graphic 1](EqImpedResult.jpg)  
+
+
+
+
 
 ### Wye–Delta Conversion Tool
 Quickly converts between Wye (Y) and Delta (Δ) configurations, eliminating tedious algebra. Before inputting any values, the application displays an orientation diagram to help the user map the current circuit to the transformation. Below are steps to use the application
