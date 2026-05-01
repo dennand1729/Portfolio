@@ -10,6 +10,8 @@
 
 A suite of custom-built applications for the TI-84 calculator designed to streamline common circuit analysis tasks. These tools reduce repetitive computation, minimize human error, and accelerate problem-solving in steady-state and network analysis.
 
+To begin using these files on your calculator you can either download the .8xp files housed on this repository and use TI Connect software to flash the file onto your device. Alternatively, use the text files on the repository to inspire your own unique designs!
+
 ## Overview of Tools
 This library houses multiple circuit-analysis applications designed to give young EE students a competitive edge and teach the power of script automation.
 
@@ -54,9 +56,10 @@ Quickly converts between Wye (Y) and Delta (Δ) configurations, eliminating tedi
 
 
 ### Phasor Calculation Engine 
-Performs arithmetic on phasors in both:
+This application performs arithmetic on phasors in both:  
+--> Rectangular form (a + jb)  
+--> Polar form (magnitude ∠ angle)  
 
-Rectangular form (a + jb)
-Polar form (magnitude ∠ angle)
-
-Designed to simplify steady-state sinusoidal analysis, including addition, subtraction, multiplication, and division.
+It is designed to simplify steady-state sinusoidal analysis, including addition, subtraction, multiplication, and division. 
+Below are the steps to use the application:  
+1.)
