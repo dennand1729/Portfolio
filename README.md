@@ -11,10 +11,17 @@
 A suite of custom-built applications for the TI-84 calculator designed to streamline common circuit analysis tasks. These tools reduce repetitive computation, minimize human error, and accelerate problem-solving in steady-state and network analysis.
 
 ## Overview of Tools
-This project includes multiple calculator-based applications that automate key operations frequently encountered in circuit analysis:
+This library houses multiple circuit-analysis applications designed to give young EE students a competitive edge and teach the power of script automation.
 
 ### Parallel Impedance Solver
-Computes equivalent impedance for arbitrary components in parallel, supporting complex values.
+
+Computes equivalent impedance for  components in parallel networks.  This application can be used on simple resistive networks or may be used in combining complex impedances in phasor domain analysis. 
+
+Here is a guide on how to use it:
+
+1.) Click PRGRM on your TI-84.  
+2.) You should see the application's Home Screen.
+
 ### Wye–Delta Conversion Tool
 Quickly converts between Wye (Y) and Delta (Δ) configurations, eliminating tedious algebra. Before inputting any values, the application displays an orientation diagram to help the user map the current circuit to the transformation. Below are steps to use the application
 
